@@ -7,6 +7,6 @@ LINE="export PATH=\$PATH:$PWD/bin"
 grep "$LINE" $BASHRC_FILE >> /dev/null
 if [ "$?" == "1" ]; then
 	echo "Updating .bashrc file"
-	echo "export $LINE" >> $BASHRC_FILE
+	echo "$LINE" >> $BASHRC_FILE
 fi
 
